@@ -12,7 +12,8 @@ import {
   LogOut, 
   Menu, 
   X,
-  Shield
+  Shield,
+  Building2
 } from 'lucide-react'
 
 interface SidebarProps {
@@ -26,11 +27,13 @@ export default function Sidebar({ className = '' }: SidebarProps) {
 
   const userNavigation = [
     { name: 'Chat', href: '/chat', icon: MessageCircle },
+    { name: 'Perusahaan', href: '/companies', icon: Building2 },
   ]
 
   const adminNavigation = [
     { name: 'Dashboard', href: '/admin/dashboard', icon: BarChart3 },
     { name: 'Chat', href: '/chat', icon: MessageCircle },
+    { name: 'Perusahaan', href: '/companies', icon: Building2 },
     { name: 'Pengguna', href: '/admin/users', icon: Users },
     { name: 'Pengaturan', href: '/admin/settings', icon: Settings },
   ]
@@ -141,4 +144,3 @@ export default function Sidebar({ className = '' }: SidebarProps) {
     </>
   )
 }
-
